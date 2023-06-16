@@ -1,0 +1,15 @@
+.todoList_Wrapper {
+        border: 1px solid #ccc;
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    justify-content:space-between;
+	.newTask {
+        width: 40%;
+        border: 1px solid #ccc;
+
+	}
+	.showList {
+        width: 60%;
+	}
+}

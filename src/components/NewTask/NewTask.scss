@@ -1,0 +1,72 @@
+.new-task {
+	width: 80%;
+	margin: auto;
+
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		.add {
+			border: none;
+			input {
+				width: 97%;
+				padding: 10px 0 10px 10px;
+			}
+		}
+
+		.description {
+			margin: 20px 0;
+			div {
+				text-align: left;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			// display: flex;
+			// flex-direction: column
+			textarea {
+				width: 98%;
+				min-height: 125px;
+			}
+		}
+		.select {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+			div {
+				text-align: left;
+				font-weight: bold;
+			}
+
+			.date {
+				flex: 1;
+				input {
+					width: 100%;
+					padding: 9px 5px;
+					margin-top: 10px;
+				}
+			}
+
+			.piority {
+				flex: 1;
+				select {
+					margin-top: 10px;
+
+					width: 100%;
+					padding: 10px 5px ;
+				}
+			}
+		}
+	}
+
+	.button {
+		margin: 50px 0;
+		button {
+			background-color: #5cb85c;
+			width: 100%;
+
+			color: #ffffff;
+			padding: 10px 0;
+			cursor: pointer;
+		}
+	}
+}
