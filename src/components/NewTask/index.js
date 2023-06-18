@@ -30,7 +30,10 @@ export default function NewTask() {
 			axios
 				.post("https://todolist-bda8c-default-rtdb.firebaseio.com/todo.json", data)
 				.then((response) => {
-					// console.log("Data", response.data);
+					setAdd("")
+					setDate(getTodayDate())
+					setDescription("")
+					setPriority("normal")
 					toast.success("Thêm thành công", {
 						position: toast.POSITION.TOP_RIGHT,
 					});

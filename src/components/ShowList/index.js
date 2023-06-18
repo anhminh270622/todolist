@@ -73,15 +73,13 @@ export default function ShowList() {
 					);
 				});
 				setCheckedItems([]);
+				if(data.length === checkedItems.length) {
+					await axios.delete(
+						`https://todolist-bda8c-default-rtdb.firebaseio.com/todo.json`
+					);
+					setData([]);
+				}
 				toast.success('Xóa thành công các mục đã chọn', {
-					position: toast.POSITION.TOP_RIGHT,
-				});
-			} else {
-				await axios.delete(
-					`https://todolist-bda8c-default-rtdb.firebaseio.com/todo.json`
-				);
-				setData([]);
-				toast.success('Xóa thành công tất cả', {
 					position: toast.POSITION.TOP_RIGHT,
 				});
 			}
