@@ -1,68 +1,100 @@
-.newtask_wrapper {
-    position: relative;
-	width: 80%;
-	margin: 0 auto;
+.show-task {
+	width: 100%;
+	min-height: 550px;
+	h4 {
+		text-align: center;
+	}
+	button {
+		border-radius: 5px;
+		padding: 5px 20px;
+		border: none;
+		margin-left: 20px;
+		cursor: pointer;
+		color: #ffff;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.newtask_wrapper {
+		width: 80%;
+		margin: 0 auto;
 
-	.newtask-content {
-		width: 100%;
-		.search {
-			input {
-				width: 97%;
-				padding: 10px 0 10px 10px;
-			}
-			margin-bottom: 15px;
-		}
-
-		.list {
-			.task {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				border: 1px solid #ccc;
-				padding: 0 10px;
-                margin-bottom: 15px;
-				.task-left {
-					display: flex;
-                    align-items: center;
-                    gap:15px;
-                    input{
-                        height: 20px;
-                        width: 20px;
-                    }
+		.newtask-content {
+			width: 100%;
+			.search {
+				input {
+					width: 97%;
+					padding: 10px 0 10px 10px;
 				}
+				margin-bottom: 15px;
+			}
 
-				.task-right {
-					button {
-						border-radius: 5px;
-						padding: 5px 20px;
-						border: none;
-						margin-left: 20px;
-                        cursor: pointer;
-                        color:#ffff;
+			.list {
+				margin-bottom: 50px;
+				.task {
+					.task-list {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						border: 1px solid #ccc;
+						padding: 0 10px;
+						margin-top: 15px;
+						.task-left {
+							display: flex;
+							align-items: center;
+							gap: 15px;
+							input {
+								height: 20px;
+								width: 20px;
+							}
+						}
+
+						.task-right {
+							.detail {
+								background-color: #00bcd4;
+							}
+							.remove {
+								background-color: #d9534f;
+							}
+						}
 					}
-					.detail {
-							background-color: #00bcd4;
-					}
-					.remove {
-                        background-color: #D9534F;
+                    .task-detail{
+                        border: 1px solid #ccc;
+						
+                        button{
+                            margin: 0;
+                        }
+                    }
+					.hidden{
+						display: none
 					}
 				}
 			}
 		}
 	}
-    .task-actions{
-        position: absolute;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        border: 1px solid #ccc;
-        width: 100%;
-        // bottom: 0;
-        .actions-left{
+	.task-actions {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid #ccc;
+		width: 100%;
+		padding: 20px 0;
+		background-color: #e0e0e0;
 
-        }
-        .actions-right{
-
-        }
-    }
+		.actions-left {
+			padding-left: 20px;
+		}
+		.actions-right {
+			padding-right: 20px;
+			button {
+				padding: 10px 30px;
+			}
+			.done {
+				background-color: #00bcd4;
+			}
+			.remove {
+				background-color: #d9534f;
+			}
+		}
+	}
 }

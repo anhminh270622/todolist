@@ -1,6 +1,7 @@
-.new-task {
+.detail-task {
 	width: 80%;
 	margin: auto;
+    padding-top: 30px;
 	h4{
 		text-align: center;
 	}
@@ -48,7 +49,7 @@
 				}
 			}
 
-			.piority {
+			.priority {
 				flex: 1;
 				select {
 					margin-top: 10px;
@@ -61,7 +62,7 @@
 	}
 
 	.button {
-		margin: 50px 0;
+		margin: 50px 0 30px 0;
 		button {
 			background-color: #5cb85c;
 			width: 100%;
